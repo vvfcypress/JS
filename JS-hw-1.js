@@ -20,24 +20,25 @@ if (cost >= 1000 && cost <= 1900){
     console.log('Cost is not found');
 }
 
-//Задача 3. Вторя часть неправильно.
-
-let cost2 = 1899;
+//Задача 3.
+//первая
+let cost2 = 1901;
 
 if (cost2 <= 1000){
     console.log('It is ok. Cost is not found between 1000 and 1900');
 } else if (cost2 >=1900){
     console.log('It is ok. Cost is not found between 1000 and 1900');
 } else {
-    
+    console.log('Cost is between 1000 and 1900');
 }
+    
+//вторая часть
 
-
-let cost3 = 1001;
+let cost3 = 1900;
 
 if (!(cost3 >= 1000)){
     console.log('It is ok. Cost is not found between 1000 and 1900');
-} else if(!(cost3 >=1900)){
+} else if(!(cost3 <=1900)){
     console.log('It is ok. Cost is not found between 1000 and 1900');
 } else {
     console.log('Cost is between 1000 and 1900');
@@ -156,45 +157,83 @@ console.log(myArray1);
 
 
 
-//Задача 10.  Это задание не получается
+//Задача 10. 
 
 let total = 1;
 let myArray2 = [2, 3, 4, 5, 6];
 
-for(i=0; i <= myArray2.lenght, i++;){
-   
-    myArray2[i] = myArray2[i]+ total;
+for(let i = 0; i < myArray2.length; i++){
+
+    total = myArray2[i] + total;
 
 }
-console.log(myArray2);
+console.log(total);
+
 
 
 // Задача 11.
 
-const arr11 = [ [1, 2], [3, 4], [5, 6] ];
 
-console.log(arr11[0][0]);
-console.log(arr11[0][1]);
-console.log(arr11[1][0]);
-console.log(arr11[1][1]);
-console.log(arr11[2][0]);
-console.log(arr11[2][1]);
+const arr111 = [ [1, 2], [3, 4], [5, 6] ];
 
-
-
-// Задача 12. Тут тоже проблемы.
-
-const testArray  = [ [1, 2], [3, 4], [5, 6, 7]]
-let product;
-
-for(i = 0; i <= testArray.length; i++){
-    
-       testArray[i] = testArray[0] * testArray[1];
-    
-    for(i = 0; i <= testArray.length; i++){
-
-        product = testArray[i] * testArray[i+1];    
+for (let i = 0; i < arr111.length; i++) {
+    for (let j = 0; j < arr111[i].length; j++) {
+        console.log(arr111[i][j]);
     }
 }
 
-console.log(product)
+
+
+
+
+// Задача 12. 
+
+const testArray = [[1, 2], [3, 4], [5, 6, 7]];
+
+let product = 1;
+
+for (let i = 0; i < testArray.length; i++) {
+    for (let j = 0; j < testArray[i].length; j++) {
+        product = product * testArray[i][j]
+    }
+}
+
+console.log(product);
+
+
+
+// Задача 13.
+
+let str = 'I lovE my MothErland';
+
+console.log(str.replace(/[aeiouy]/gi, ''));
+
+
+// Задача 14.
+
+let metr = 19;
+
+if(metr > 10 && metr <20){
+    console.log(`${metr} метрів цє ${metr/1000} кілометра`);
+}
+else if(metr % 10 == 0){
+    console.log(`${metr} метрів цє ${metr/1000} кілометра`);
+} else if (metr % 10 == 1){
+    console.log(`${metr} метр цє ${metr/1000} кілометра`);
+} else if(metr % 10 == 2){
+    console.log(`${metr} метра цє ${metr/1000} кілометра`);
+} else if(metr % 10 == 3){
+    console.log(`${metr} метра цє ${metr/1000} кілометра`);
+} else if(metr % 10 == 4){
+    console.log(`${metr} метра цє ${metr/1000} кілометра`);
+} else if(metr % 10 == 5){
+    console.log(`${metr} метрів цє ${metr/1000} кілометра`);
+} else if(metr % 10 == 6){
+    console.log(`${metr} метрів цє ${metr/1000} кілометра`);
+} else if(metr % 10 == 7){
+    console.log(`${metr} метрів цє ${metr/1000} кілометра`);
+} else if(metr % 10 == 8){
+    console.log(`${metr} метрів цє ${metr/1000} кілометра`);
+} else if(metr % 10 == 9){
+    console.log(`${metr} метрів цє ${metr/1000} кілометра`);
+}
